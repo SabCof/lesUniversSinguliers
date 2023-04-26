@@ -1,0 +1,81 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Les Univers Singuliers - Home
+{% endblock %}
+
+{% block body %}
+
+
+	<article class="py-5 text-center container">
+		<h2>QUI SOMMES NOUS</h2>
+		<div class="row py-lg-5">
+
+
+			<p>Bienvenue aux Univers Singuliers !</p>
+			<p>Une association où des adultes autistes se rencontrent, se réunissent, s’entraident.Créé en 2019 à Périgueux, les Univers Singuliers est un Groupe d’Entraide Mutuelle (GEM) qui nous permet, nous personnes autistes adultes sans déficience intellectuelle, de nous rencontrer, nous entraider, échanger et construire ensemble des projets allant du voyage à l’évènement de sensibilisation à l’autisme, en passant par toute sorte d’ateliers et activités. Notre local est situé quartier Saint-Georges. On s’y retrouve du mardi au samedi dans une ambiance accueillante autour d'un café, d'un repas, d'une activité ou d’un ordinateur, pour les projets communs. Deux animateurs à temps complet nous accompagnent dans la gestion et la croissance de notre association et de nos projets.</p>
+		</div>
+	</article>
+	<section>
+		<div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+			<div class="carousel-indicators">
+				<button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="" aria-label="Slide 1"></button>
+				<button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class="active" aria-current="true"></button>
+				<button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" class=""></button>
+				<button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4" class=""></button>
+
+			</div>
+			<div class="carousel-inner">
+				<div class="carousel-item">
+					<svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveaspectratio="xMidYMid slice" focusable="false">
+						<rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
+					</svg>
+					<div class="container">
+						<div class="carousel-caption text-start">
+							<h1>Example headline.</h1>
+							<p>Some representative placeholder content for the first slide of the carousel.</p>
+							<p>
+								<a class="btn btn-lg btn-primary" href="#">Sign up today</a>
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="carousel-item active">
+					<svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveaspectratio="xMidYMid slice" focusable="false">
+						<rect width="100%" height="100%" fill="var(--bs-body-bg)"></rect>
+					</svg>
+					<div class="container">
+						<div class="carousel-caption">
+							<h1>Another example headline.</h1>
+							<p>Some representative placeholder content for the second slide of the carousel.</p>
+							<p>
+								<a class="btn btn-lg btn-primary" href="#">Learn more</a>
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveaspectratio="xMidYMid slice" focusable="false">
+						<rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
+					</svg>
+					<div class="container">
+						<div class="carousel-caption text-end">
+							<h1>One more for good measure.</h1>
+							<p>Some representative placeholder content for the third slide of this carousel.</p>
+							<p>
+								<a class="btn btn-lg btn-primary" href="#">Browse gallery</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Previous</span>
+			</button>
+			<button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Next</span>
+			</button>
+		</div>
+	</section>
+{% endblock %}

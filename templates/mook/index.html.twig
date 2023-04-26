@@ -1,0 +1,45 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Mook index{% endblock %}
+
+{% block body %}
+    <h1>Mook index</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Titre</th>
+                <th>Description</th>
+                <th>Témoignage</th>
+                <th>Photos</th>
+                <th>Couleur</th>
+                <th>Illustration</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for mook in mooks %}
+            <tr>
+                <td>{{ mook.id }}</td>
+                <td>{{ mook.Titre }}</td>
+                <td>{{ mook.description }}</td>
+                <td>{{ mook.témoignage }}</td>
+                <td>{{ mook.photos }}</td>
+                <td>{{ mook.couleur }}</td>
+                <td>{{ mook.illustration }}</td>
+                <td>
+                    <a href="{{ path('app_mook_show', {'id': mook.id}) }}">show</a>
+                    <a href="{{ path('app_mook_edit', {'id': mook.id}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="8">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('app_mook_new') }}">Create new</a>
+{% endblock %}

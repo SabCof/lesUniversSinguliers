@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New Mook{% endblock %}
+
+{% block body %}
+    <h1>Create new Mook</h1>
+
+    {{ include('mook/_form.html.twig') }}
+
+    <a href="{{ path('app_mook_index') }}">back to list</a>
+{% endblock %}

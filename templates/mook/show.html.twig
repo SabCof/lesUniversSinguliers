@@ -1,0 +1,46 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Mook{% endblock %}
+
+{% block body %}
+    <h1>Mook</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ mook.id }}</td>
+            </tr>
+            <tr>
+                <th>Titre</th>
+                <td>{{ mook.Titre }}</td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>{{ mook.description }}</td>
+            </tr>
+            <tr>
+                <th>Témoignage</th>
+                <td>{{ mook.témoignage }}</td>
+            </tr>
+            <tr>
+                <th>Photos</th>
+                <td>{{ mook.photos }}</td>
+            </tr>
+            <tr>
+                <th>Couleur</th>
+                <td>{{ mook.couleur }}</td>
+            </tr>
+            <tr>
+                <th>Illustration</th>
+                <td>{{ mook.illustration }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="{{ path('app_mook_index') }}">back to list</a>
+
+    <a href="{{ path('app_mook_edit', {'id': mook.id}) }}">edit</a>
+
+    {{ include('mook/_delete_form.html.twig') }}
+{% endblock %}
